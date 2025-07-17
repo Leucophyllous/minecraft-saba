@@ -4,32 +4,110 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>生活サーバー紹介</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="../favicon.png" type="image/png">
+  <link rel="icon" href="icon.svg" type="image/svg+xml" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.7);
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #1b2430;
+      padding: 2rem;
+      border-radius: 10px;
+      animation: fadein 1s ease;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+    }
+
+    h1 img {
+      height: 40px;
+      margin-right: 12px;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.7rem;
+    }
+
+    a {
+      color: #6cf;
+    }
+
+    .section {
+      margin-top: 2rem;
+    }
+
+    .section.warning {
+      background: #400;
+      padding: 1rem;
+      border-radius: 6px;
+      color: #fcc;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      text-align: center;
+      color: #aaa;
+    }
+
+    @keyframes fadein {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
-  <main class="container">
-    <header>
-      <img src="icon.png" alt="生活鯖アイコン" class="icon" />
-      <h1>生活サーバー紹介</h1>
-    </header>
+  <div class="overlay">
+    <div class="container">
+      <h1><img src="icon.svg" alt="鯖アイコン" />生活サーバー紹介</h1>
 
-    <p class="lead">
-      このサーバーは、プレイヤーが自由に暮らしを営み、通話を通して交流を深めるサバイバル系サーバーです。
-    </p>
+      <p>このサーバーは、プレイヤーが自由に暮らしを営み、通話を通じて交流を深めるサバイバル系サーバーです。</p>
 
-    <ul class="feature-list">
-      <li>🔴 <strong>参加時は <span class="highlight">通話を開くこと</span></strong></li>
-      <li>🟢 協力型マルチプレイ対応</li>
-      <li>🔷 <a href="http://kazuboo.tplinkdns.com:8101/" target="_blank">BlueMap でワールドを見る</a></li>
-      <li>🟡 統合版：<code>@サーバー名seikatuSMP</code></li>
-      <li>⚫ <strong>Java版：</strong><code>kazuboo.tplinkdns.com:25566</code></li>
-    </ul>
+      <ul>
+        <li>🔴 <strong>参加時は通話を開くこと</strong></li>
+        <li>🟣 協力型マルチプレイ対応</li>
+        <li>🔵 <a href="http://kazuboo.tplinkdns.com:8101/" target="_blank">BlueMapでワールドを見る</a></li>
+        <li>🟢 統合版：@サーバー名 <code>seikatuSMP</code></li>
+        <li><b>Java版：</b><code>kazuboo.tplinkdns.com:25566</code></li>
+      </ul>
 
-    <a href="../index.html" class="back-link">← 一覧に戻る</a>
-    <footer>
-      © 2025 Leucophyllous Network
-    </footer>
-  </main>
+      <div class="section warning">
+        ⚠ 注意事項：
+        <ul>
+          <li>営利目的・迷惑行為は禁止</li>
+          <li>定期的な通報と監視を行っています</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <a href="../index.html">← 一覧に戻る</a>
+      </div>
+
+      <footer>
+        © 2025 Leucophyllous Network
+      </footer>
+    </div>
+  </div>
 </body>
 </html>
